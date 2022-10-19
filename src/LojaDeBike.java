@@ -35,7 +35,10 @@ public class LojaDeBike
             System.out.println("4. Código 104 - Freio a disco por R$ 89,99. ");
             System.out.println("5. Adicionar ao carrinho de compras. ");
             System.out.println("6. Voltar ");
-            if(opcaoPromocao==6) {
+            if(opcaoPromocao == 1){
+                carrinho+=999.99;
+            }
+            else if(opcaoPromocao==6) {
                 menu();
             }
         }
