@@ -26,6 +26,7 @@ public class LojaDeBike
     }
     public static void opcao1(int opcao,int carrinho){
         int opcaoPromocao=0;
+        int carrinhoPromocao=0;
         while (opcaoPromocao!=5) {
             System.out.println("1. Código 101 - Bicicleta nova na cor amarela, aro 26, " +
                     "com 18 marchas e na promoção pelo preço de R$ 999.99. ");
@@ -36,7 +37,19 @@ public class LojaDeBike
             System.out.println("5. Adicionar ao carrinho de compras. ");
             System.out.println("6. Voltar ");
             if(opcaoPromocao == 1){
-                carrinho+=999.99;
+                carrinhoPromocao+=999.99;
+            }
+            else if(opcaoPromocao == 2){
+                carrinhoPromocao+=400;
+            }
+            else if(opcaoPromocao == 3){
+                carrinhoPromocao+=59.99;
+            }
+            else if(opcaoPromocao == 4){
+                carrinhoPromocao+=89.99;
+            }
+            else if(opcaoPromocao == 5){
+                carrinho+=carrinhoPromocao;
             }
             else if(opcaoPromocao==6) {
                 menu();
